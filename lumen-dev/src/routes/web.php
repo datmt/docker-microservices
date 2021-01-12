@@ -15,7 +15,10 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
+$router->get('/hello', function () use ($router) {
+    return "hey";
+});
 
-$router->get('/hey', function () use ($router) {
-    return "Helly";
+$router->get('/bye', function () use ($router) {
+    return "bye";
 });
